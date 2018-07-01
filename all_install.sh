@@ -3,7 +3,7 @@
 DEPLY_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 HARBOR_FOLDER=$DEPLY_ROOT/harbor
 SCHEME=http
-SERVER_IP=172.16.106.136
+SERVER_IP=192.168.247.130
 DOCKER_VERSION=1.12.6-0~ubuntu-xenial
 
 function pre-install () {
@@ -44,7 +44,8 @@ fi
 
 function install-harbor () {
 	cd ${HARBOR_FOLDER}
-	source install.sh
+	sed -i "s/<HARBOR-IP>/${SERVER_IP}/g" install.sh
+	source install.sh 
 }
 
 function down_modules () {
@@ -89,7 +90,7 @@ function swagger-load () {
 }
 
 function RESTful_Create () {
-	curl -u admin:Emotibot1 -X POST --header 'Content-Type: application/json' --header 'Accept: text/plain' -d '{"project_name": "emotibot-k8s","public": 0,"enable_content_trust": true,"prevent_vulnerable_images_from_running": true,"prevent_vulnerable_images_from_running_severity": "string","automatically_scan_images_on_push": true}' 'http://192.168.142.101/api/projects'
+	curl -u admin:Emotibot1 -X POST --header 'Content-Type: application/json' --header 'Accept: text/plain' -d '{"project_name": "emotibot-k8s","public": 0,"enable_content_trust": true,"prevent_vulnerable_images_from_running": true,"prevent_vulnerable_images_from_running_severity": "string","automatically_scan_images_on_push": true}' "http://$SERVER_IP/api/projects"
 }
 
 pre-install
