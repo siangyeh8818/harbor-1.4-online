@@ -5,5 +5,5 @@ Harbor是一款開源的docker registry , 有別於官方簡易的DTR , 有了UI
 腳本上還附加對harbor的兒裝要裝的依賴 ：
 1. docker
 2. docker-compose
-3. python
+3. python <br>
 此腳本是以Ubuntu為基礎OS , 若是其他OS , 對於安裝環境的依賴腳本是不可運行的
