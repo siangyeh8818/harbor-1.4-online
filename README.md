@@ -1,15 +1,15 @@
 # harbor-1.4+Swagger-auto-install
-=========================
+=========================<br>
 Harbor是一款開源的docker registry , 有別於官方簡易的DTR , 有了UI介面方便管理者對Image坐更好的分類管理 <br>
 以及進一步的權限控管, 預設的官方Harbor並沒把Swagger加進去 , 有了Swagger後 , 你便更輕易讀懂RESTful API該怎麼打 <br>
-腳本上還附加對harbor的兒裝要裝的依賴 ：
-1. docker
-2. docker-compose
+腳本上還附加對harbor的兒裝要裝的依賴 ：<br>
+1. docker<br>
+2. docker-compose<br>
 3. python <br>
-此腳本是以Ubuntu為基礎OS , 若是其他OS , 對於安裝環境的依賴腳本是不可運行的
+此腳本是以Ubuntu為基礎OS , 若是其他OS , 對於安裝環境的依賴腳本是不可運行的<br>
 ......................................................<br>
-腳本設定方式 : 
-vi all_install.sh
+腳本設定方式 : <br>
+vi all_install.sh <br>
 設定以下變數 : <br>
 1.SERVER_IP : 安裝的機器的IP <br>
 2.DOCKER_VERSION : 安裝的docker版本 , 建議用預設的 <br>
