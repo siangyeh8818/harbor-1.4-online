@@ -14,16 +14,16 @@ vi all_install.sh
 1.SERVER_IP : 安裝的機器的IP
 2.DOCKER_VERSION : 安裝的docker版本 , 建議用預設的
 
-運行安裝
+運行安裝 <br>
 ./all_install.sh
 
-安裝限制 : 
-有網路環境 , 若無網路環境 , 請先將Harbor所需的image事先pull 到所需機器上
-image 清單 : 
-vmware/registry-photon      v2.6.2-v1.4.0 
-vmware/nginx-photon         v1.4.0
-vmware/harbor-log           v1.4.0 
-vmware/harbor-jobservice    v1.4.0 
-vmware/harbor-ui            v1.4.0
-vmware/harbor-adminserver   v1.4.0
-vmware/harbor-db            v1.4.0
+安裝限制 : <br>
+有網路環境 , 若無網路環境 , 請先將Harbor所需的image事先pull 到所需機器上 <br>
+image 清單 : <br>
+vmware/registry-photon:v2.6.2-v1.4.0  <br>
+vmware/nginx-photon:v1.4.0 <br>
+vmware/harbor-log:v1.4.0  <br>
+vmware/harbor-jobservice:v1.4.0  <br>
+vmware/harbor-ui:v1.4.0 <br>
+vmware/harbor-adminserver:v1.4.0 <br>
+vmware/harbor-db:v1.4.0 <br>
