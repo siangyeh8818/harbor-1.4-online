@@ -14,8 +14,8 @@ Harbor是一款開源的docker registry , 有別於官方簡易的DTR , 有了UI
 -------
 vi all_install.sh <br>
 設定以下變數 : <br>
-1.SERVER_IP : 安裝的機器的IP <br>
-2.DOCKER_VERSION : 安裝的docker版本 , 建議用預設的 <br>
+1. SERVER_IP : 安裝的機器的IP <br>
+2. DOCKER_VERSION : 安裝的docker版本 , 建議用預設的 <br>
 
 
 運行安裝 
