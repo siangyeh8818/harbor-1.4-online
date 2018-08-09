@@ -12,7 +12,7 @@ Harbor是一款開源的docker registry , 有別於官方簡易的DTR , 有了UI
 
 腳本設定方式 :
 -------
-        vi all_install.sh <br>
+        vi all_install.sh 
 設定以下變數 : <br>
 1. SERVER_IP : 安裝的機器的IP <br>
 2. DOCKER_VERSION : 安裝的docker版本 , 建議用預設的 <br>
@@ -20,7 +20,7 @@ Harbor是一款開源的docker registry , 有別於官方簡易的DTR , 有了UI
 
 運行安裝 
 -------
-    ./all_install.sh <br>
+    ./all_install.sh 
 
 
 安裝限制 :
