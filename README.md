@@ -20,7 +20,7 @@ vi all_install.sh <br>
 
 運行安裝 
 -------
-./all_install.sh <br>
+    ./all_install.sh <br>
 
 
 安裝限制 :
